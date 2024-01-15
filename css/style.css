@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none!important;
+}
+li{
+	list-style: none!important;
+}
+
+@font-face{
+	font-family: 'BwGradual';
+	src:url(../font/BwGradualDEMO-Bold.otf);
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1{
+	font-family: 'BwGradual';
+	font-size: 64px;
+}
+h2{
+	font-family: 'BwGradual';
+	font-size: 48px;
+}
+h3{
+	font-family: 'BwGradual';
+	font-size: 32px;
+}
+p{
+	font-size: 16px;
+}
+.for-mobile{
+	display: none;
+}
+.dis-flex{
+	display: flex;
+	align-items: center;
+}
+.section-padding{
+	width: 100%;
+	display: flex;
+	padding: 100px 0;
+}
+
+.offer-news{
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	background: #F0EBDD;
+}
+.news-container{
+	width: 100%;
+	overflow: hidden;
+}
+.news-slider {
+	font-size: 11px;
+}
+.news-slider  p {
+	font-family: 'BwGradual';
+	margin: 0;
+	font-size: 16px;
+	padding: 0;
+	color: #162B3F;
+	text-transform: uppercase;
+}
+
+.news-slider  p a{
+	font-family: 'BwGradual';
+	color: #162B3F;
+	text-decoration-line: underline;
+}
+.news-slider  p a:hover{
+	text-decoration-line: underline!important;
+}
+
+
+/* hero */
+.hero{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 999;
+	background: url(../images/video-cover.png) center center;
+	background-size: cover;
+
+}
+.youtube-video{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.about{
+	display: flex;
+	width: 100%;
+	background: #b31616;
+	padding: 100px 0;
+}
+.over-layer{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #0c0c0c2d;
+}
+
+.navbar{
+	margin-top: 55px;
+    width: 100%;
+    z-index: 99999;
+}
+.navbar-nav{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.nav-item{
+	padding-left:50px;
+}
+.navbar button{
+	margin-left: auto;
+}
+.menu-btn{
+	border-radius: 2px;
+	padding: 10px 24px;
+	border: none;
+	color: #fff;
+	background: rgba(22, 43, 63, 0.30);
+	
+}
+
+.nav-item a{
+    text-decoration: none;
+	color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+	transition: .4s ease;
+}
+
+.navbar-toggler-icon{
+	color: #1D8AD8;
+}
+.nav-bton {
+    margin-left: 12px;
+}
+.nav-bton a{
+    font-size: 15px;
+    background: #000;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
