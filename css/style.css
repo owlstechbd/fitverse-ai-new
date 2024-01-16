@@ -21,7 +21,7 @@ li{
 
 @font-face{
 	font-family: 'BwGradual';
-	src:url(../font/BwGradualDEMO-Bold.otf);
+	src:url(../front/BwGradualDEMO-Regular.otf);
 	font-style: normal;
 	font-weight: 400;
 }
@@ -203,48 +203,37 @@ p{
 	margin-bottom: 60px;
 }
 
-.step-box-all{
+.step-box-all {
 	width: 100%;
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	gap: 10px;
-}
-.step-box:nth-child(1){
-	background: #F6C7D8;
+	display: flex;
+	flex-direction: row;
 }
 
-.step-box:nth-child(2):hover{
-	background: #FF976A;
-}
-.step-box:nth-child(3):hover{
-	background: #3D6B7A;
-}
-.step-box:nth-child(4):hover{
-	background: #E9AE65;
-}
-.step-box i{
-	font-size: 6px;
-}
-.step-box h4{
-	font-size: 20px;
-}
-.step-box{
-	width: 100%;
+.step-box {
+	width: 25%;
 	position: relative;
+	height: 100%;
 	padding: 32px 24px;
 	transition: .6s;
-	height: 100%;
-}
-
-
-.step-box:hover{
+	height:300px;
+  }
+  .step-box i{
+	font-size: 6px;
+  }
+ .step-box:nth-child(2):hover{
+	background: #E9AE65;
+ }
+ .step-box:nth-child(3):hover{
+	background: #3D6B7A;
+ }
+ .step-box:nth-child(4):hover{
+	background: #FF976A;
+ }
+  .step-box:hover {
 	transform: translateY(-10px);
-}
-
-
-
-
-.step-box::after{
+  }
+  
+  .step-box::after {
 	content: "";
 	position: absolute;
 	height: 94px;
@@ -253,15 +242,33 @@ p{
 	right: 0;
 	transition: .6s;
 	background: rgba(22, 43, 63, 0.20);
-}
-
-.bor-none::after{
+  }
+  
+  .bor-none::after {
 	background: transparent;
-}
+  }
+  
+  #box1 {
+	background: #F6C7D8;
+  }
 
-.step-box:hover::after{
-	background: transparent;
-}
+  
+  #box1.hovered {
+	background: #fff;
+  }
+  
+  #box2.hovered {
+	background: #FF976A;
+  }
+  
+  #box3.hovered {
+	background: #3D6B7A;
+  }
+  
+  #box4.hovered {
+	background: #E9AE65;
+  }
+  
 .slider{
 	position: relative;
 	width: 100%;
@@ -296,4 +303,179 @@ p{
 	position: absolute;
 	right: 18%;
 	bottom: 100px;
+}
+.slider-tow-right{
+	position: absolute;
+	right: 5%;
+	background: #F0EBDD;
+	padding: 16px;
+	top: 100px;
+}
+.slider-tow-right p{
+	font-size: 18px;
+}
+.slider-tow-right ul li{
+	margin-bottom: 6px;
+}
+
+
+
+.slider-three-left{
+	position: absolute;
+	left: 30%;
+	top: 100px;
+	width: 400px;
+	
+}
+
+
+  
+  #typing-text {
+	font-size: 16px;
+  }
+.message-type{
+	display: flex;
+	width: 100%;
+	padding: 16px 12px;
+	background:#F6C7D8;
+	border-radius: 2px;
+
+}
+.slider-three-left img{
+	margin-top: 20px;
+}
+.message-type p{
+	font-size: 14px;
+	margin-left: 10px;
+}
+.message-type .typed{
+	
+}
+.message-type img{
+	width: 35px;
+	height: 35px;
+}
+.pricing{
+	border-radius: 0px 0px 150px 0px;
+
+	background: #162B3F;
+}
+.pricing .center-title{
+	width: 70%;
+}
+.pricing .center-title h2{
+	color: #fff;
+}
+  
+.pricing .center-title p{
+	color: #fff;
+	opacity: 0.7
+}
+.price-box{
+	height: 100%;
+	position: relative;
+	padding: 35px 35px 100px;
+	border: 1px solid rgba(255, 255, 255, 0.20);
+}
+  
+.first-price{
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.20);
+	background: #F0EBDD;
+}
+
+.price-box h2{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+.first-price h2{
+
+	color: #162B3F;
+}
+.price-box h4{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+.first-price h4{
+	color: #162B3F;
+}
+.price-box p{
+	color: #888C8F;
+	margin: 0;
+	padding: 0;
+}
+
+.price-box ul{
+	margin-top: 40px
+}
+.price-box ul li{
+	display: flex;
+	margin-bottom: 12px;
+	color: #fff;
+}
+.first-price ul li{
+	color: #162B3F;
+}
+.price-box ul li i{
+	margin-top: 4px;
+	margin-right: 10px;
+	color: #fff;
+}
+.first-price ul li i{
+	margin-top: 4px;
+	margin-right: 10px;
+	color: #162B3F;
+}
+.price-box .gobal-btn{
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50% , 0);
+
+}
+.price-box .gobal-btn a{
+	padding: 10px 60px;
+	background: #fff;
+	color: #162B3F;
+}
+.first-price  .gobal-btn a{
+	background: #162B3F;
+	color: #fff;
+}
+.first-time p{
+	background:#FF976A;
+	top: -20px;
+	left: 50%;
+	padding: 10px 20px;
+	transform: translate(-50% , 0);
+	position: absolute;
+	color: #162B3F;
+}
+.price-bottom{
+	width: 100%;
+	margin-top: 50px;
+	padding: 40px;
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.20);
+}
+.price-bottom-middle{
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+}
+.price-bottom-middle h3{
+	color: #fff;
+}
+.price-bottom-middle p{
+	color: #fff;
+}
+.price-bottom-middle .gobal-btn a{
+	background: #fff;
+	color: #162B3F;
+}
+.price-bottom-middle .gobal-btn a i{
+	color: #162B3F;
 }
