@@ -94,6 +94,43 @@ function typeText() {
 }
 
 
+//faq
+$(document).ready(function () {
+  $('.card-header').click(function () {
+      $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+      $(this).closest('.card').siblings().find('.card-header i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      $(this).closest('.card').siblings().find('.card-header').removeClass('active-faq');
+      $(this).toggleClass('active-faq');
+  });
+});
+
+
+$(document).ready(function() {
+  $('.testmonail-all').owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true, 
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true,
+    margin: 30,
+    dots: true,  // Add this line for dots navigation
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 1
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+});
+
 
 
 // animation

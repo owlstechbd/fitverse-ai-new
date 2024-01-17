@@ -479,3 +479,290 @@ p{
 .price-bottom-middle .gobal-btn a i{
 	color: #162B3F;
 }
+
+
+.card-header {
+	cursor: pointer;
+	border: none!important;
+}
+.faq-heading{
+	padding: 15px 0;
+}
+
+.card-header i {
+    /* float: right; */
+    position: absolute;
+    right: 16px;
+    top: 34px;
+    font-size: 20px;
+}
+.faq-heading h4{
+	font-size: 24px;
+}
+.faq-heading h4 img{
+	margin-right: 7px;
+}
+.faq-heading h5 {
+	font-size: 24px;
+	text-align: center!important;
+}
+.faq-heading{
+	display: flex;
+}
+.faq-heading h5{
+	margin: 0 auto;
+}
+
+
+.card {
+	margin-bottom: 0px;
+	border-radius: 0!important;
+	border: none!important;
+}
+
+.card-body {
+	background: #f3f1fc;
+	padding: 15px !important;
+}
+
+div#accordion {
+	width: 100%;
+}
+
+.card-header{
+	background: transparent!important;
+}
+
+.faq-message{
+	width: 100%;
+	height: 380px;
+	background: url(../images/piza.png) center center no-repeat;
+	background-size: cover;
+}
+
+#headingOne1{
+	background:#FF976A!important;
+}
+#faq1{
+	background:#FF976A;
+}
+.coaches-box{
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.coaches-box img{
+	width: 100%;
+}
+.coaches-box:hover .coaches-descripition{
+	top: 0;
+}
+.coaches-name{
+	top: 30px;
+	left: 30px;
+	position: absolute;
+}
+.coaches-name p{
+	border-radius: 2px;
+	padding: 8px 20px;
+	color: #fff;
+}
+.tanya p{
+	background:  #3D6B7A;
+}
+.coaches-descripition{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 20px 15px 10px;
+	top:-600px;
+	background: #3D6B7A;
+	transition: .6s;
+}
+.cd-top{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cd-top p{
+	color: #fff;
+	font-size: 16px;
+}
+.cd-top p span{
+	border-radius: 2px;
+	padding: 8px 20px;
+	background: #fff;
+}
+
+.coaches-descripition p{
+	font-size: 18px;
+	color: #fff;
+}
+.cd-bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.cd-bottom ul{
+	padding-right: 20px;
+	
+}
+.cd-bottom ul li{
+	color: #ffffffca;
+}
+.cd-bottom ul li span{
+	color: #fff;
+}
+
+.cd-bottom ul:nth-child(1) {
+	width: 50%;
+  	border-right: 1px #ffffff62 solid;
+}
+
+.testmonail{
+	border-radius: 0px 150px 0px 0px;
+	background:#F0EBDD;
+}
+
+.testmonail-box{
+	border-radius: 2px;
+	background: #FFF;
+	padding: 24px;
+}
+.testmonail-box span img{
+	width: 88px!important;
+	margin: 10px 0 30px;
+}
+.testmonail-box p span{
+	font-weight: 600;
+}
+
+.owl-dots {
+	display: block;
+	position: absolute;
+	bottom: -50px; /* Adjust as needed */
+	left: 50%;
+	transform: translateX(-50%); /* Center horizontally */
+}
+.owl-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc!important; /* Adjust as needed */
+	margin: 0 5px;
+  }
+  
+  .owl-dot.active {
+	background-color: #333!important; /* Adjust as needed */
+}
+footer{
+	width: 100%;
+	background:#162B3F;
+	padding: 100px 0 30px;
+}
+.footer-container{
+	display: flex;
+}
+.footer-logo{
+	width: 15%;
+	
+}
+.footer-menu{
+	width: 50%;
+	padding:0  30px;
+	justify-content: space-between;
+	display: flex;
+}
+.footer-action{
+	width: 35%;
+	
+}
+.footer-menu ul li{
+	margin-bottom: 20px;
+}
+.footer-menu ul li a{
+	color: #fff;
+}
+.footer-action p{
+	color: #fff;
+}
+.footer-action input{
+	background: transparent;
+	border-radius: 2px;
+	padding: 5px;
+	border: 1px #ffffff82 solid;
+}
+.footer-action input[type="submit"] {
+    background: #fff;
+    padding: 5px 15px;
+}
+.checkbox-in {
+	margin-top: 20px;
+	display: flex;
+	align-items: start;
+}
+.checkbox-in p{
+	color: #434649;
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+.checkbox-in input[type=checkbox], input[type=radio]{
+	background: transparent;
+	border-radius: 2px;
+	margin-top: 5px;
+	border: 1px #ffffff82 solid;
+}
+.footer-bottom{
+	width: 100%;
+	padding-top: 30px;
+	border-top: 1px #FFFFFF33 solid;
+}
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-bottom ul {
+	display: flex;
+}
+.footer-bottom ul li{
+	color: #fff;
+	font-size: 12px;
+}
+.footer-bottom ul li a{
+	color: #fff;
+}
+.footer-bottom ul li i{
+	color: #fff;
+}
+.footer-bottom ul:nth-child(1) li{
+	margin-right: 20px;
+}
+.footer-bottom ul:nth-child(2) li{
+	margin-left: 20px;
+}
+
+.price-bg{
+	background: url(../images/price-bg.png) center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.price-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.price-content{
+	width: 40%;
+}
+.price-detailes{
+	display: flex;
+	justify-content: flex-end;
+	width: 25%;
+	margin-left: auto;
+}
+.price-color{
+	background: #162B3F;
+	padding: 50px 0;
+}
