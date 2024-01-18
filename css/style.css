@@ -322,35 +322,30 @@ p{
 
 .slider-three-left{
 	position: absolute;
-	left: 30%;
+	left: 15%;
 	top: 100px;
-	width: 400px;
+	width: 300px;
 	
 }
 
 
   
-  #typing-text {
-	font-size: 16px;
+.typing-text {
+	margin-left: 10px;
+	font-size: 11px;
+	margin-bottom: 0;
   }
 .message-type{
 	display: flex;
 	width: 100%;
-	padding: 16px 12px;
-	background:#F6C7D8;
+	padding: 10px 12px;
+	background:#FF976A;
 	border-radius: 2px;
 
 }
-.slider-three-left img{
-	margin-top: 20px;
-}
-.message-type p{
-	font-size: 14px;
-	margin-left: 10px;
-}
-.message-type .typed{
-	
-}
+
+
+
 .message-type img{
 	width: 35px;
 	height: 35px;
@@ -765,4 +760,60 @@ footer{
 .price-color{
 	background: #162B3F;
 	padding: 50px 0;
+}
+.programe{
+	width: 100%;
+	padding: 100px 0 0;
+}
+.programe-benefit{
+	width: 100%;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	height: 600px;
+	position: relative;
+}
+.service-slider{
+	width: 80%;
+	position: relative;
+	margin-left: auto;
+}
+.custom-nav{
+	position: absolute;
+	bottom: -50px;
+	right: 100px;
+}
+.custom-nav button{
+	border: none;
+	margin-right: 30px;
+	
+	background: transparent;
+}
+.custom-nav button:focus{
+	outline: none;
+}
+.programe-bottom{
+	padding: 30px;
+	bottom: 0;
+	width: 300px;
+	border-radius: 2px 2px 0px 0px;
+	background:  #162B3F;
+	position: absolute;
+	left:100px
+}
+.programe-bottom h4{
+	color: #fff;
+}
+.programe-bottom i{
+	color: #fff;
+	font-size: 7px;
+}
+.programe-bottom p{
+	color: #fff;
+}
+.message-type img{
+	width: 32px!important;
+}
+
+.service-slider .owl-dots{
+	display: none;
 }

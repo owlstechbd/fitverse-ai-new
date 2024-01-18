@@ -65,33 +65,7 @@ $(function(){
     document.getElementById('box1').classList.remove('hovered');
   });
   
-//typing effect
-const typingText = document.getElementById("typing-text");
-const targetSection = document.getElementById("target-section");
 
-const observer = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) {
-    typeText(); // Start typing effect when section enters viewport
-  } else {
-    typingText.textContent = ""; // Clear text when section leaves viewport
-  }
-});
-
-observer.observe(targetSection);
-
-const textToType = "Alexa! I know your work day’s been crazy, so I shortned your workout. Consistency is our motto! Let’s keep that treak going.";
-let index = 0;
-
-function typeText() {
-  if (index < textToType.length) {
-    typingText.textContent += textToType.charAt(index);
-    index++;
-    setTimeout(typeText, Math.random() * 5 + 50);
-  } else {
-    // Display full text without animation after typing effect finishes
-    typingText.textContent = textToType;
-  }
-}
 
 
 //faq
@@ -132,6 +106,39 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true, 
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true,
+    nav: false,
+    margin:30,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 1
+      },
+      992: {
+        items: 1.6
+      }
+    }
+  });
+
+  $('.custom-nav .prev').click(function() {
+    $('.owl-carousel').trigger('prev.owl.carousel');
+  });
+
+  $('.custom-nav .next').click(function() {
+    $('.owl-carousel').trigger('next.owl.carousel');
+  });
+});
 
 // animation
 
