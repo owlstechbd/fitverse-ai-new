@@ -25,7 +25,9 @@ li{
 	font-style: normal;
 	font-weight: 400;
 }
-
+.container{
+	max-width: 1208px!important;
+}
 h1{
 	font-family: 'BwGradual';
 	font-size: 64px!important;
@@ -67,13 +69,11 @@ p{
 	width: 100%;
 	overflow: hidden;
 }
-.news-slider {
-	font-size: 11px;
-}
+
 .news-slider  p {
 	font-family: 'BwGradual';
 	margin: 0;
-	font-size: 16px;
+	font-size: 11px;
 	padding: 0;
 	color: #162B3F;
 	text-transform: uppercase;
@@ -309,7 +309,9 @@ p{
 	right: 5%;
 	background: #F0EBDD;
 	padding: 16px;
-	top: 100px;
+	border-radius: 2px;
+
+	top: 20px;
 }
 .slider-tow-right p{
 	font-size: 18px;
@@ -322,10 +324,22 @@ p{
 
 .slider-three-left{
 	position: absolute;
-	left: 15%;
+	left: 10%;
 	top: 100px;
-	width: 300px;
-	
+	width: 400px;	
+}
+.message-box img{
+	margin-top: 20px;
+	width: 100px!important;
+}
+.slider-last-left{
+	position: absolute;
+	right:5%;
+	top: 140px;
+	width: 400px;	
+}
+.slider-last-left .message-type{
+	background:#F6C7D8;
 }
 
 
@@ -481,15 +495,21 @@ p{
 	border: none!important;
 }
 .faq-heading{
-	padding: 15px 0;
+	padding:5px 0;
 }
 
 .card-header i {
     /* float: right; */
     position: absolute;
     right: 16px;
-    top: 34px;
+    top: 20px;
     font-size: 20px;
+}
+.faq2 i{
+	color: #fff;
+}
+#faq2 .faq-content p{
+	color: #fff;
 }
 .faq-heading h4{
 	font-size: 24px;
@@ -529,10 +549,104 @@ div#accordion {
 }
 
 .faq-message{
+	display: flex;
+	align-items: flex-end;
 	width: 100%;
 	height: 380px;
-	background: url(../images/piza.png) center center no-repeat;
-	background-size: cover;
+	background-size: cover!important;
+}
+.faq-message ul{
+	padding: 20px 20px 10px;
+	max-width: 350px;
+}
+.faq-message ul li{
+	background:#FF976A;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'BwGradual';
+	padding: 12px 16px;
+	margin-bottom: 12px;
+}
+.faq-message ul li:nth-child(2){
+	background: #F0EBDD;
+	margin-left: 25px;
+	display: flex;
+
+}
+.faq-message ul li img{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+.faq-message ul li:nth-child(3){
+	background: #F0EBDD;
+	display: flex;
+}
+.faq-content {
+	width: 100%;
+	display: flex;
+	height: 100%;
+	align-items: end;
+	padding-right: 20px;
+}
+#faq2 .faq-message ul li:nth-child(1){
+	background: #F0EBDD;
+	margin-left: 30px;
+}
+#faq2 .faq-message ul li:nth-child(2) {
+    background: #3D6B7A;
+    color: #fff;
+	margin-left: 0;
+    display: inline-block;
+}
+#faq2 .faq-message ul li:nth-child(3){
+	margin-left: 50px;
+}
+
+#faq3 .faq-message ul li:nth-child(1){
+	margin-left: 0px;
+	background: #F6C7D8;
+}
+#faq3 .faq-message ul li:nth-child(2){
+	margin-left: 50px;
+}
+#faq3 .faq-message ul li:nth-child(3){
+	margin-left: 0px;
+	background: #F6C7D8;
+	display: inline-block;
+}
+#faq3 .faq-message ul li:nth-child(4){
+	background:#F0EBDD;
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+}
+#faq3 .faq-message ul li:nth-child(4) span{
+	padding-right: 10px;
+}
+#faq4 .faq-message ul li:nth-child(1){
+	margin-left: 0px;
+	background: #E9AE65;
+}
+#faq4 .faq-message ul li:nth-child(2){
+	margin-left: 50px;
+}
+#faq4 .faq-message ul li:nth-child(3){
+	margin-left: 0px;
+	background: #E9AE65;
+	display: inline-block;
+}
+#faq4 .faq-message ul li:nth-child(4){
+	background:#F0EBDD;
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+}
+#faq4 .faq-message ul li:nth-child(4) span{
+	padding-right: 10px;
 }
 
 #headingOne1{
@@ -541,6 +655,27 @@ div#accordion {
 #faq1{
 	background:#FF976A;
 }
+
+#headingOne2{
+	background:#3D6B7A!important;
+}
+#faq2{
+	background:#3D6B7A;
+}
+#headingOne3{
+	background:#F6C7D8!important;
+}
+#faq3{
+	background:#F6C7D8;
+}
+#headingOne4{
+	background:#E9AE65!important;
+}
+#faq4{
+	background:#E9AE65;
+}
+
+
 .coaches-box{
 	position: relative;
 	margin-bottom: 30px;
@@ -744,12 +879,16 @@ footer{
 	display: flex;
 	align-items: center;
 }
+.price-container{
+	width: 78%;
+	margin: 0 auto;
+}
 .price-flex{
 	display: flex;
 	justify-content: space-between;
 }
 .price-content{
-	width: 40%;
+	max-width: 495px;
 }
 .price-detailes{
 	display: flex;
@@ -757,9 +896,15 @@ footer{
 	width: 25%;
 	margin-left: auto;
 }
+.price-detailes h4{
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'BwGradual';
+}
 .price-color{
 	background: #162B3F;
-	padding: 50px 0;
+	padding: 50px 0 100px;
+	border-radius: 0px 0px 150px 0px;
 }
 .programe{
 	width: 100%;
@@ -773,14 +918,14 @@ footer{
 	position: relative;
 }
 .service-slider{
-	width: 80%;
+	width: 95%;
 	position: relative;
 	margin-left: auto;
 }
 .custom-nav{
 	position: absolute;
 	bottom: -50px;
-	right: 100px;
+	right: 300px;
 }
 .custom-nav button{
 	border: none;
@@ -798,10 +943,11 @@ footer{
 	border-radius: 2px 2px 0px 0px;
 	background:  #162B3F;
 	position: absolute;
-	left:100px
+	left:50px
 }
 .programe-bottom h4{
 	color: #fff;
+	font-size: 19px;
 }
 .programe-bottom i{
 	color: #fff;
@@ -816,4 +962,10 @@ footer{
 
 .service-slider .owl-dots{
 	display: none;
+}
+.section.coaches.section-padding{
+	padding-bottom: 50px;
+}
+section.problem-slove.section-padding{
+	padding-top: 0px;
 }
