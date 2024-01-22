@@ -1,5 +1,7 @@
 
 
+
+
 //offer-news
 const swiper = new Swiper('.news-container', {
   loop: true,
@@ -30,6 +32,27 @@ swiper.slides.forEach((slide, index) => {
 
 
 
+//popup
+// Get all buttons with the "openPopup" class
+var openButtons = document.getElementsByClassName('openPopup');
+
+// Add click event listeners to each button
+for (var i = 0; i < openButtons.length; i++) {
+  openButtons[i].addEventListener('click', togglePopup);
+}
+
+// Function to toggle the popup's visibility
+function togglePopup() {
+  var overlay = document.getElementById('overlay');
+  var popup = document.getElementById('popup');
+
+  // Toggle the display of the overlay and popup
+  overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+  popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+};
+
+
+
 $(function(){
   3
     jQuery('[data-vbg]').youtube_background();
@@ -39,6 +62,8 @@ $(function(){
     const videoBackgrounds = VIDEO_BACKGROUNDS;
   6
   });
+
+
   
 //hover effect
   document.getElementById('box2').addEventListener('mouseover', function() {
@@ -103,40 +128,102 @@ $(document).ready(function() {
       }
     }
   });
+
+
 });
+
 
 
 $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
-    items: 3,
-    loop: true,
-    autoplay: true, 
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true,
-    nav: false,
-    margin:30,
-    responsive: {
-      0: {
-        items: 1
+      items: 2,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000, // 3 seconds
+      autoplayHoverPause: true,
+      nav: false,
+      margin: 30,
+      responsive: {
+          0: { items: 1 },
+          480: { items: 1 },
+          768: { items: 1 },
+          992: { items: 1.8 }
       },
-      480: {
-        items: 2
-      },
-      768: {
-        items: 1
-      },
-      992: {
-        items: 1.6
-      }
-    }
+      smartSpeed: 800, // Adjust the speed of the slide transition
+      fluidSpeed: 800
   });
 
   $('.custom-nav .prev').click(function() {
-    $('.owl-carousel').trigger('prev.owl.carousel');
+      $('.owl-carousel').trigger('prev.owl.carousel');
   });
 
   $('.custom-nav .next').click(function() {
-    $('.owl-carousel').trigger('next.owl.carousel');
+      $('.owl-carousel').trigger('next.owl.carousel');
+  });
+});
+
+
+
+
+const phoneInputField = document.querySelector("#phone");
+const phoneInput = window.intlTelInput(phoneInputField, {
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  initialCountry: "ae", // Set UAE as the default country
+}
+);
+var iti = phoneInput
+
+//filter
+function filterItems(category) {
+  var items = document.querySelectorAll('.item');
+
+  items.forEach(function(item) {
+      if (category === 'all' || item.classList.contains(category)) {
+          item.classList.remove('hidden');
+      } else {
+          item.classList.add('hidden');
+      }
+  });
+}
+
+//faq
+document.addEventListener("DOMContentLoaded", function () {
+  var faqIcons = document.querySelectorAll(".card-header");
+
+  faqIcons.forEach(function (icon) {
+    // Listening for a click event on each icon
+    icon.addEventListener("click", function () {
+      // Introduce a delay to allow aria-expanded to update
+      setTimeout(() => {
+        console.log("FAQ item clicked");
+
+        // Get the parent .card-header of the clicked icon
+        var cardHeader = this.closest(".card-header");
+        var isExpanded =
+          cardHeader.getAttribute("aria-expanded") === "true";
+
+        // Add or remove the new class from other card headers
+        document
+          .querySelectorAll(".card-header")
+          .forEach(function (otherHeader) {
+            if (otherHeader !== cardHeader) {
+              if (isExpanded) {
+                // Add class if the section is being opened
+                otherHeader.classList.add("new-class");
+              } else {
+                // Remove class if the section is being closed
+                otherHeader.classList.remove("new-class");
+              }
+            }
+          });
+
+        // Optional: Remove the class from the current card header if it's being opened
+        if (isExpanded) {
+          cardHeader.classList.remove("new-class");
+        }
+      }, 10); // Delay of 100 milliseconds
+    });
   });
 });
 
