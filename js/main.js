@@ -64,31 +64,55 @@ $(function(){
   });
 
 
-  
-//hover effect
-  document.getElementById('box2').addEventListener('mouseover', function() {
-    document.getElementById('box1').classList.add('hovered');
+
+
+
+//faq
+document.addEventListener("DOMContentLoaded", function () {
+  var faqIcons = document.querySelectorAll(".card-header");
+
+  faqIcons.forEach(function (icon) {
+    // Listening for a click event on each icon
+    icon.addEventListener("click", function () {
+      // Introduce a delay to allow aria-expanded to update
+      setTimeout(() => {
+        console.log("FAQ item clicked");
+
+        // Get the parent .card-header of the clicked icon
+        var cardHeader = this.closest(".card-header");
+        var isExpanded =
+          cardHeader.getAttribute("aria-expanded") === "true";
+
+        // Add or remove the new class from other card headers
+        document
+          .querySelectorAll(".card-header")
+          .forEach(function (otherHeader) {
+            if (otherHeader !== cardHeader) {
+              if (isExpanded) {
+                // Add class if the section is being opened
+                otherHeader.classList.add("new-class");
+              } else {
+                // Remove class if the section is being closed
+                otherHeader.classList.remove("new-class");
+              }
+            }
+          });
+
+        // Optional: Remove the class from the current card header if it's being opened
+        if (isExpanded) {
+          cardHeader.classList.remove("new-class");
+        }
+      }, 10); // Delay of 100 milliseconds
+    });
   });
+});
+
+
+
+
+
   
-  document.getElementById('box2').addEventListener('mouseout', function() {
-    document.getElementById('box1').classList.remove('hovered');
-  });
-  
-  document.getElementById('box3').addEventListener('mouseover', function() {
-    document.getElementById('box1').classList.add('hovered');
-  });
-  
-  document.getElementById('box3').addEventListener('mouseout', function() {
-    document.getElementById('box1').classList.remove('hovered');
-  });
-  
-  document.getElementById('box4').addEventListener('mouseover', function() {
-    document.getElementById('box1').classList.add('hovered');
-  });
-  
-  document.getElementById('box4').addEventListener('mouseout', function() {
-    document.getElementById('box1').classList.remove('hovered');
-  });
+
   
 
 
@@ -187,44 +211,55 @@ function filterItems(category) {
   });
 }
 
-//faq
-document.addEventListener("DOMContentLoaded", function () {
-  var faqIcons = document.querySelectorAll(".card-header");
 
-  faqIcons.forEach(function (icon) {
-    // Listening for a click event on each icon
-    icon.addEventListener("click", function () {
-      // Introduce a delay to allow aria-expanded to update
-      setTimeout(() => {
-        console.log("FAQ item clicked");
 
-        // Get the parent .card-header of the clicked icon
-        var cardHeader = this.closest(".card-header");
-        var isExpanded =
-          cardHeader.getAttribute("aria-expanded") === "true";
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-        // Add or remove the new class from other card headers
-        document
-          .querySelectorAll(".card-header")
-          .forEach(function (otherHeader) {
-            if (otherHeader !== cardHeader) {
-              if (isExpanded) {
-                // Add class if the section is being opened
-                otherHeader.classList.add("new-class");
-              } else {
-                // Remove class if the section is being closed
-                otherHeader.classList.remove("new-class");
-              }
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+                currentlyActiveAccordionItemHeader.classList.toggle("active");
+                currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
             }
-          });
 
-        // Optional: Remove the class from the current card header if it's being opened
-        if (isExpanded) {
-          cardHeader.classList.remove("new-class");
-        }
-      }, 10); // Delay of 100 milliseconds
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            } else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+        });
     });
-  });
+
+    // Manually trigger a click event on the first accordion item to open it by default
+    accordionItemHeaders[0].click();
+
+
+//hover effect
+document.getElementById('box2').addEventListener('mouseover', function() {
+  document.getElementById('box1').classList.add('hovered');
+});
+
+document.getElementById('box2').addEventListener('mouseout', function() {
+  document.getElementById('box1').classList.remove('hovered');
+});
+
+document.getElementById('box3').addEventListener('mouseover', function() {
+  document.getElementById('box1').classList.add('hovered');
+});
+
+document.getElementById('box3').addEventListener('mouseout', function() {
+  document.getElementById('box1').classList.remove('hovered');
+});
+
+document.getElementById('box4').addEventListener('mouseover', function() {
+  document.getElementById('box1').classList.add('hovered');
+});
+
+document.getElementById('box4').addEventListener('mouseout', function() {
+  document.getElementById('box1').classList.remove('hovered');
 });
 
 // animation
