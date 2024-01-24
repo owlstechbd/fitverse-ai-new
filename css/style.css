@@ -1117,7 +1117,7 @@ section.problem-slove.section-padding{
 	height: 100%;
 	background-color:#162b3f57;
 	/* Semi-transparent black */
-	z-index: 9998;
+	z-index: 99;
 	/* Behind the popup */
 }
 
