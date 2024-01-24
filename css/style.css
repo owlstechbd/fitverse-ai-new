@@ -25,9 +25,16 @@ li{
 	font-style: normal;
 	font-weight: 400;
 }
+@font-face{
+	font-family: 'BwGradual-blod';
+	src:url(../front/BwGradualDEMO-ExtraBold.otf);
+	font-style: normal;
+	font-weight: 700;
+}
 .container{
 	max-width: 1208px!important;
 }
+
 h1{
 	font-family: 'BwGradual';
 	font-size: 64px!important;
@@ -137,11 +144,16 @@ p{
 	outline: none!important;
 	border: none;
 	color: #fff;
+	transition: .6s;
 	background: rgba(22, 43, 63, 0.30);
 }
 .menu-btn i{
 	font-size: 6px;
 	margin-right: 10px;
+}
+.menu-btn:hover{
+	color: #000;
+	background: #FD976F;
 }
 .nav-item a{
     text-decoration: none;
@@ -149,6 +161,9 @@ p{
     font-size: 14px;
     font-weight: 700;
 	transition: .4s ease;
+}
+.nav-item a:hover{
+	color: #FD976F;;
 }
 
 .navbar-toggler-icon{
@@ -446,6 +461,17 @@ p{
 .first-price ul li{
 	color: #162B3F;
 }
+.price-box ul li span{
+	color: #fff!important;
+	font-weight: 600;
+}
+.first-price ul li span{
+	color: #162B3F!important;
+	font-weight: 600;
+}
+.space{
+	margin-left: 4px;
+}
 .price-box ul li i{
 	margin-top: 4px;
 	margin-right: 10px;
@@ -552,8 +578,8 @@ p{
 }
 
 .card-body {
-	background: #f3f1fc;
-	padding: 15px !important;
+    background: #ff976a;
+    padding: 15px !important;
 }
 
 div#accordion {
@@ -561,7 +587,11 @@ div#accordion {
   }
   
   .card-header {
-	background: transparent;
+	background: #fff!important;
+	border-bottom: 1px solid rgba(22, 43, 63, 0.20)!important;
+  }
+  .active-faq.card-header{
+	border: none!important;
   }
   
   .faq-message {
@@ -664,32 +694,7 @@ div#accordion {
 	padding-right: 10px;
   }
   
-  #headingOne1 {
-	background: #ff976a;
-  }
-  #faq1 {
-	background: #ff976a;
-  }
   
-  #headingOne2 {
-	background: #3d6b7a;
-  }
-  #faq2 {
-	background: #3d6b7a;
-  }
-  #headingOne3 {
-	background: #f6c7d8;
-  }
-  #faq3 {
-	background: #f6c7d8;
-  }
-  #headingOne4 {
-	background: #e9ae65;
-  }
-  #faq4 {
-	background: #e9ae65;
-  }
-
 
   .new-class {
 	background: white !important;
@@ -728,14 +733,30 @@ div#accordion {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	padding: 20px 15px 10px;
+	padding: 40px 15px 10px;
 	top:-600px;
 	background: #3D6B7A;
 	transition: .6s;
 }
+.ruchir-dis{
+	background: #FD976F;
+}
+.rachna-dis{
+	background: #F6C7D8;
+}
+.estefania-dis{
+	background: #FD976F;
+}
+.chaima-dis{
+	background:#E9AE65;
+}
+.estefania-dis p{
+	font-size: 15px;
+}
 .cd-top{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 .cd-top p{
@@ -749,7 +770,7 @@ div#accordion {
 }
 
 .coaches-descripition p{
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 }
 .cd-bottom{
@@ -760,6 +781,13 @@ div#accordion {
 	padding-right: 20px;
 	
 }
+
+.active-faq {
+	color: #fff;
+	background: #FF976A!important;
+}
+
+
 .cd-bottom ul li{
 	color: #ffffffca;
 }
@@ -781,6 +809,7 @@ div#accordion {
 	border-radius: 2px;
 	background: #FFF;
 	padding: 24px;
+	height: 380px;
 }
 .testmonail-box span img{
 	width: 88px!important;
@@ -788,8 +817,17 @@ div#accordion {
 }
 .testmonail-box p span{
 	font-weight: 600;
+	margin-left: 19px;
+	font-size: 14px;
 }
-
+.test-img {
+	display: flex;
+	
+	align-items: center;
+}
+.test-img img{
+	width: 50px!important;
+}
 .owl-dots {
 	display: block;
 	position: absolute;
@@ -929,8 +967,8 @@ footer{
 }
 .price-detailes h4{
 	font-size: 24px;
-	font-weight: 700;
-	font-family: 'BwGradual';
+	font-weight: 900;
+	font-family: 'BwGradual-blod';
 }
 .price-color{
 	background: #162B3F;
@@ -1200,6 +1238,9 @@ section.problem-slove.section-padding{
 	color: #000;
 	background: rgba(245, 151, 110, 0.50);
 }
+.about .menu-btn:hover{
+	background: #FF976A;
+}
 
 .buy-header{
 	padding: 40px 0;
@@ -1445,7 +1486,9 @@ section.problem-slove.section-padding{
 }
 
 .corporate-bg{
-	background: url(../images/corporate-bg.png);
+	height: 75vh;
+	background: url(../images/corporate-bg.png) top center no-repeat;
+	background-size: cover;
 }
 .corportae-welcome h2{
 	color: #fff;
@@ -1567,8 +1610,8 @@ section.problem-slove.section-padding{
 .pratner ul li{
 	margin:20px 10px;
 }
-.pratner ul li img{
-	width: 90%;
+.pratner ul li img {
+    width: 130px;
 }
 
 
