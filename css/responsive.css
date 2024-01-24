@@ -388,5 +388,39 @@
     .choach-filter{
         flex-wrap: wrap;
     }
+    .popup{
+        width: 95%;
+    }
+    .free-season-popup{
+        flex-direction: column;
+    }
+    .popup-from{
+        width: 100%;
+        padding: 20px;
+    }
+    .popup-img{
+        width: 100%;
+    }
+    .popup-img {
+        width: 100%;
+        display: none;
+        
+    }
+    .navbar{
+        z-index: 99;
+    }
+    .popup-from .col-md-6{
+        width: 50%!important;
+    }
+
+    .close-btn img{
+        width: 33px;
+    }
+    .close-btn {
+        position: absolute;
+        right: 11px;
+        top: 14px;
+    }
+
 }
 
