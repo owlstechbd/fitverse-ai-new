@@ -509,6 +509,7 @@
     }
     .footer-action input[type="submit"]{
         width: 30%;
+        margin-top: 10px;
     }
     input[type=checkbox], input[type=radio] {
         box-sizing: border-box;
