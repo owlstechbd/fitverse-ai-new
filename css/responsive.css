@@ -65,14 +65,15 @@
    
     .price-bg {
         height: 73vh;
-        background-position: right center;
-        background-position-x: -466px;
+        background: linear-gradient(90deg, rgba(18,18,18,0.2553396358543417) 0%, rgba(36,36,36,0.4066001400560224) 100%),url(../images/price-phone.svg);
+        background-size: cover;
     }
     .price-content{
         display: none;
     }
     .price-detailes {
-        width: 82%;
+        width: 95%;
+        justify-content: flex-start;
     }
     .price-container{
         width: 100%;
@@ -346,6 +347,8 @@
         width: 70%;
         bottom: 18px;
         z-index: 99;
+        display: flex;
+        align-items: center;
     }
     .thierd-message{
         position: absolute;
@@ -365,9 +368,31 @@
         margin-top: 20px;
         width: 83px!important;
     }
-    .step-box{
+    .step-box-all {
         width: 100%;
-        background: #F6C7D8;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .step-box {
+        width: 49%;
+        margin-bottom: 10px;
+        padding: 20px 10px;
+        height: 200px;
+        
+    }
+    .step-box::after{
+        display: none;
+    }
+    .step-box h3{
+        font-size: 20px!important;
+    }
+    .step-box h4{
+        font-size: 16px;
+    }
+    .step-box p{
+        font-size: 14px;
     }
     .howit-work-phone .gobal-btn{
         text-align: center;
@@ -442,6 +467,53 @@
         position: absolute;
         left: 16px;
     }
+    section.how-work.section-padding {
+        padding-bottom: 0;
+    }
+    .price-detailes h4{
+        color: #fff;
+    }
+    .price-detailes p{
+        color: #fff;
+    }
+    .price-detailes .gobal-btn a{
+        background: #FF976A;
+    }
+    .faq-message ul{
+        display: none;
+    }
+    .faq-content p{
+        padding-top: 10px;
+    }
+    ul.policy-phone.for-desktop {
+        display: none;
+    }
+    .footer-for-phone ul{
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer-for-phone ul li{
+        color: #fff;
+        font-size: ;
+    }
+    .footer-for-phone ul li a{
+        color: #fff;
+        margin: 0 25px;
+    }
 
 }
+@media screen and (max-width: 374px){
+    .footer-action input{
+        width: 65%;
+    }
+    .footer-action input[type="submit"]{
+        width: 30%;
+    }
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+        width: 11px;
+    }
 
+}
