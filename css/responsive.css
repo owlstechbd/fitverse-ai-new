@@ -1,3 +1,26 @@
+
+@media screen and (max-width: 580px){
+    .price-bg{
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 374px){
+    .footer-action input{
+        width: 65%;
+    }
+    .footer-action input[type="submit"]{
+        width: 30%;
+        margin-top: 10px;
+    }
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+        width: 11px;
+    }
+
+}
+
+
 @media screen and (max-width: 768px){
 
 
@@ -67,6 +90,8 @@
         height: 73vh;
         background: linear-gradient(90deg, rgba(18,18,18,0.2553396358543417) 0%, rgba(36,36,36,0.4066001400560224) 100%),url(../images/price-phone.svg);
         background-size: cover;
+        align-items: start;
+        padding-top: 70px;
     }
     .price-content{
         display: none;
@@ -476,9 +501,7 @@
     .price-detailes p{
         color: #fff;
     }
-    .price-detailes .gobal-btn a{
-        background: #FF976A;
-    }
+
     .faq-message ul{
         display: none;
     }
@@ -495,26 +518,22 @@
     }
     .footer-for-phone ul li{
         color: #fff;
+        font-size: 12px;
        
     }
     .footer-for-phone ul li a{
         color: #fff;
         margin: 0 25px;
+        font-size: 12px;
+    }
+    .footer-logo img{
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    .faq-message {
+        height: 284px;
+
     }
 
 }
-@media screen and (max-width: 374px){
-    .footer-action input{
-        width: 65%;
-    }
-    .footer-action input[type="submit"]{
-        width: 30%;
-        margin-top: 10px;
-    }
-    input[type=checkbox], input[type=radio] {
-        box-sizing: border-box;
-        padding: 0;
-        width: 11px;
-    }
 
-}

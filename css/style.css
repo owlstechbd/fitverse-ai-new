@@ -392,10 +392,7 @@ p{
 
 
 
-.message-type img{
-	width: 35px;
-	height: 35px;
-}
+
 .pricing{
 	border-radius: 0px 0px 150px 0px;
 
@@ -620,8 +617,8 @@ div#accordion {
 	display: flex;
   }
   .faq-message ul li img {
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-left: 10px;
   }
   .faq-message ul li:nth-child(3) {
@@ -1034,7 +1031,8 @@ footer{
 	color: #fff;
 }
 .message-type img{
-	width: 32px!important;
+	width: 40px!important;
+	height: 40px;
 }
 
 .service-slider .owl-dots{
