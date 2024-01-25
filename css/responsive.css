@@ -424,7 +424,13 @@
     .popup-from h2 {
         font-size: 27px!important;
         margin-bottom: 30px;
-    }git 
+    }
+    .overlay{
+        z-index: 99;
+    }
+    .navbar-brand img{
+        width: 120px;
+    }
 
 }
 
