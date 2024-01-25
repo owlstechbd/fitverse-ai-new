@@ -12,6 +12,7 @@
     }
     section#navbar {
         padding: 10px 0;
+        padding-top: 0;
     }
     .navbar-toggler-icon{
         margin-top: 20px;
@@ -333,9 +334,11 @@
         font-size: 10px;
         margin-right: 7px;
     }
-    .afterprograme-content h4{
+    .afterprograme-content h4 {
         font-size: 20px;
         font-family: 'BwGradual';
+        display: flex;
+        align-items: center;
     }
     .mobile-programe-box .message-type {
         left: 14px;
@@ -429,7 +432,15 @@
         z-index: 99;
     }
     .navbar-brand img{
-        width: 120px;
+        width: 110px;
+    }
+    .navbar-brand{
+        padding-left: 34px;
+    }
+    i.fas.fa-bars {
+        top: 30px;
+        position: absolute;
+        left: 16px;
     }
 
 }
