@@ -80,7 +80,7 @@ $(function(){
 		e.preventDefault();
 		var target = this.hash;
 		$('html, body').animate({
-			scrollTop: $(target).offset().top -50
+			scrollTop: $(target).offset().top -0
 		},500);
 	});
 

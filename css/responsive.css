@@ -75,7 +75,7 @@
         background-size: cover;
         position: relative;
         overflow: hidden;
-        height: 70vh;
+        height: 90vh;
         margin-top: 30px;
         border-radius: 0px 0px 168.657px 0px;
     }
@@ -533,6 +533,24 @@
     .faq-message {
         height: 284px;
 
+    }
+
+    .conditions-main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .plan-box {
+        padding: 13px 10px;
+        border-radius: 2px;
+        background: #F2F2F2;
+    }
+    .buy-header {
+        padding: 25px 0;
+        width: 100%;
+        background: #F2F2F2;
+    }
+    select#country-code{
+        height: 43px;
     }
 
 }

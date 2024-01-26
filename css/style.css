@@ -47,6 +47,9 @@ h3{
 	font-family: 'BwGradual';
 	font-size: 32px!important;
 }
+html{
+	scroll-behavior: smooth;
+}
 p{
 	font-size: 16px;
 }
@@ -107,6 +110,11 @@ p{
 	background-size: cover;
 	border-radius: 0px 0px 268.657px 0px;
 
+}
+#background-video{
+	width: 100%;
+	object-fit: cover;
+	background-size: cover;
 }
 .youtube-video{
 	position: absolute;

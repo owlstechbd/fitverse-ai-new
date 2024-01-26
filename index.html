@@ -34,11 +34,11 @@
 
 			<div class="news-container">
 				<div class="swiper-wrapper client-w">
-					<div class="swiper-slide news-slider"><p>Enjoy first free session.  <a href="">Book Now</a></p></div>
-					<div class="swiper-slide news-slider"><p>Enjoy first free session.  <a href="">Book Now</a></p></div>
-					<div class="swiper-slide news-slider"><p>Enjoy first free session.  <a href="">Book Now</a></p></div>
-					<div class="swiper-slide news-slider"><p>Enjoy first free session.  <a href="">Book Now</a></p></div>
-					<div class="swiper-slide news-slider"><p>Enjoy first free session.  <a href="">Book Now</a></p></div>
+					<div class="swiper-slide news-slider openPopup"><p>Enjoy first free session.  <a href="#">Book Now</a></p></div>
+					<div class="swiper-slide news-slider openPopup"><p>Enjoy first free session.  <a href="#">Book Now</a></p></div>
+					<div class="swiper-slide news-slider openPopup"><p>Enjoy first free session.  <a href="#">Book Now</a></p></div>
+					<div class="swiper-slide news-slider openPopup"><p>Enjoy first free session.  <a href="#">Book Now</a></p></div>
+					<div class="swiper-slide news-slider openPopup"><p>Enjoy first free session.  <a href="#">Book Now</a></p></div>
 				</div>
 			</div>	
 
@@ -49,7 +49,9 @@
 <!-- hero-section-for desktop -->
 
 	<section class="hero for-desktop">
-		<div class="youtube-video" data-vbg="https://www.youtube.com/watch?v=dIGmfhCHy0U"></div>
+		<video id="background-video" autoplay loop muted playsinline poster="images/preloader.jpg">
+			<source src="images/video-web.mp4" type="video/mp4">
+		 </video>
 		<div class="over-layer">
 			<section id="navbar">
 				<nav class="navbar navbar-expand-lg">
@@ -64,11 +66,11 @@
 							<ul class="navbar-nav">
 		
 								<li class="nav-item">
-									<a href="coaches.html">Coaches</a>
+									<a href="#coaches">Coaches</a>
 								</li>
 		
 								<li class="nav-item">
-									<a href="price-paln.html">Plans</a>
+									<a href="#price">Plans</a>
 								</li>
 		
 								<li class="nav-item">
@@ -125,11 +127,11 @@
 						<ul class="navbar-nav">
 	
 							<li class="nav-item">
-								<a href="coaches.html">Coaches</a>
+								<a href="#coaches">Coaches</a>
 							</li>
 	
 							<li class="nav-item">
-								<a href="price-paln.html">Plans</a>
+								<a href="#price">Plans</a>
 							</li>
 	
 							<li class="nav-item">
@@ -165,7 +167,9 @@
 		</div>
 
 		<div class="mobile-video">
-			<div class="youtube-video-mobile" data-vbg="https://www.youtube.com/watch?v=dIGmfhCHy0U"></div>
+			<video id="background-video" autoplay loop muted playsinline poster="images/preloader.jpg">
+				<source src="images/phone-video.mp4" type="video/mp4">
+			 </video>
 		</div>
 	</section>
 <!-- hero-section-for mobile -->
@@ -346,10 +350,12 @@
 
 	</section>
 	
-	<section class="price-bg">
+	<section class="price-bg" id="price">
 		<div class="price-container">
 			<div class="price-flex">
-				
+				<div class="price-content for-desktop">
+					<h2>Experience it and fall in love, or your first month is on us.</h2>
+				</div>
 				<div class="price-detailes">
 					<div>
 						<h4>AED 600 per month</h4>
@@ -385,7 +391,7 @@
 
 
 
-	<section class="coaches section-padding">
+	<section class="coaches section-padding" id="coaches">
 		<div class="container">
 			<div class="center-title">
 				<h2>Meet our wellness coaches</h2>
@@ -867,7 +873,7 @@
 				<div class="footer-menu">
 					<ul>
 						<li><a href="about.html">About</a></li>
-						<li><a href="price-paln.html">Pricing</a></li>
+						<li><a href="price-paln.html">Plans </a></li>
 						<li><a href="corporate.html">Corporate</a></li>
 					</ul>
 					<ul>
