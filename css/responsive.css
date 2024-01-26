@@ -71,7 +71,7 @@
     }
     .mobile-video{
         width: 100%;
-        background: url(../images/preloader.jpg) center center;
+        background: url(../images/preloader-phone.svg) center center;
         background-size: cover;
         position: relative;
         overflow: hidden;
@@ -99,6 +99,9 @@
     .price-detailes {
         width: 95%;
         justify-content: flex-start;
+    }
+    .price-detailes .gobal-btn a{
+        background: #F6C7D8;
     }
     .price-container{
         width: 100%;
@@ -551,6 +554,12 @@
     }
     select#country-code{
         height: 43px;
+    }
+    .first-price.price-box h4::after{
+        top: 137px;
+    }
+    .buy-header img{
+        width: 110px;
     }
 
 }
